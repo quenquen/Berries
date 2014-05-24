@@ -1,12 +1,12 @@
 <html>
   <body>
-    <p>Berries installation page</p>
+    <p>Berries WebApp installation page</p>
     <script>
       // This URL must be a full url.
       var manifestUrl = 'URL/package.manifest';
       var req = navigator.mozApps.installPackage(manifestUrl);
       req.onsuccess = function() {
-        alert("Berries App: Now you can Tweet On The Go!!!");
+        alert("Berries WebApp: Now you can Tweet On The Go!!!");
       };
       req.onerror = function() {
         alert(this.error.name);

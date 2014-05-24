@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/app.css"/>
     <link rel="stylesheet" href="css/transitions.css">
     <link rel="stylesheet" href="css/progress_activity.css"/>
-    <title>Berries</title>
+    <title>Berries WebApp</title>
+
 </head>
 <body>
 <header>
@@ -22,7 +23,12 @@
         <label for="textContents"></label>
         <textarea id="textContents" placeholder="Tweet" maxlength="140"></textarea>
         <div id="count" align="right">140</div>
-        <div align="center"><img src="img/logo/64.png"/> <h2>Tweet on the go!</h2></div>
+        
+        <img src="img/icon/icon_social_bitly.png" align="top" /> <input type="text" name="url" id="url"/>
+        <input type="submit" id="short" value="Shorten!"/>
+        <div id="result"></div>
+        <br />
+        <div align="center"><img src="img/logo/128.png" width="64" height="64"/> <h2>Tweet on the go!</h2></div>
     </div>
 </div>
 
@@ -34,6 +40,8 @@
         <li><button id="logout"></button></li>
     </ul>
 </footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/bitly.js"></script>
 <script src="js/lib/jquery.js"></script>
 <script src="js/lib/text-change.js"></script>
 <script src="js/lib/jsOAuth.js"></script>
